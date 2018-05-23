@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8"> 
+    <script>
+        function myFunction() {
+            document.getElementById("demo").innerHTML = "Paragraph changed.";
+        }
+    </script>
+    <!-- <script src ="scripts/require.js"></script> -->
+
+    <script src="scripts/bundle.js"></script>
+    <script src="scripts/jquery.min.js"></script>
+    <script src="scripts/storage.js"></script>
+    <script src="scripts/libsignal-protocol.js"></script>
+    <script src="scripts/random.js"></script>
+    <script src="scripts/device.js"></script>
+    <script src="scripts/bootstrap.js"></script>
+    <script src="scripts/stanza.js"></script>
+    <script src="scripts/arraybuffer.js"></script>
+    <script src="scripts/peer.js"></script>
+    <script src="scripts/store.js"></script>
+    <script src="scripts/omemo.js"></script>
+    <script src="scripts/connection.js"></script>
+    <!-- <script src="scripts/bundle.js"></script> -->
+    <script src="scripts/index.js"></script>
+</head>
+
+<body>
+
+    <h1>Welcome to secure chat!</h1>
+    <!-- <button type="button" onclick="store('hi', 'ali')">set</button>
+    <button type="button" onclick="console.log(retrieve('hi'))">get</button>
+    <button type="button" onclick="sendToServer()">get</button> -->
+    <p>Username:</p>
+    <input id='username' type="text" name="to" value="ali"><br>
+    <button type="button" onclick="register()">Register</button>
+    <br>
+
+    <p>To:</p>
+    <input id='to' type="text" name="to" value="akbar"><br>
+    <p>Message:</p>
+    <input id='message' type="text" name="message" value="hi!"><br>
+    <button type="button" onclick="sendMessage()">Send</button>
+
+    <div id="messages">
+
+    </div>
+
+</body>
+
+</html>
